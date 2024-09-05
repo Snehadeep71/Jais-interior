@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jais-Work</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="work.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__data">
+                <a href="index.html" class="nav__logo">
+                    <h1>JAIS INTERIO</h1>
+                </a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line nav__burger"></i>
+                    <i class="ri-close-line nav__close"></i>
+                </div>
+            </div>
+
+            <!--=============== NAV MENU ===============-->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="about.html" class="nav__link">About Us</a></li>
+
+                    <li><a href="work.html" class="nav__link">Works</a></li>
+                    <li><a href="ourservices.html" class="nav__link">Our Services</a></li>
+
+                    <li><a href="contact.html" class="nav__link" style="padding: 20px;">Contact Us</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!---------------------------work html starts here---------------------->
+    <section class="wsec-01">
+        <h1>Our Works</h1>
+        <P>We will produce what you have in mind.</P>
+        <div class="gallery">
+            <!-- Thumbnails for the gallery -->
+            <div class="gallery-image">
+                <img src="images/01.jpg" alt="Living Room 1" onclick="openModal();currentSlide(1)">
+            </div>
+            <div class="gallery-image">
+                <img src="images/02.jpg" alt="Living Room 2" onclick="openModal();currentSlide(2)">
+            </div>
+            <div class="gallery-image">
+                <img src="images/03.jpg" alt="Living Room 3" onclick="openModal();currentSlide(3)">
+            </div>
+            <div class="gallery-image">
+                <img src="images/04.jpg" alt="Living Room 4" onclick="openModal();currentSlide(4)">
+            </div>
+            <div class="gallery-image">
+                <img src="images/05.jpg" alt="Living Room 5" onclick="openModal();currentSlide(5)">
+            </div>
+            <div class="gallery-image">
+                <img src="images/06.jpg" alt="Living Room 6" onclick="openModal();currentSlide(6)">
+            </div>
+        </div>
+        
+        <!-- Fullscreen Modal/Slider -->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+                <div class="mySlides">
+                    <img src="images/01.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="images/02.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="images/03.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="images/04.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="images/05.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="images/06.jpg" style="width:100%">
+                </div>
+        
+                <!-- Next/Prev Buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+                <!-- Thumbnail Image Indicators -->
+                <div class="thumbnail-row">
+                    <div class="column">
+                        <img class="thumbnail" src="images/01.jpg" onclick="currentSlide(1)" alt="Living Room 1">
+                    </div>
+                    <div class="column">
+                        <img class="thumbnail" src="images/02.jpg" onclick="currentSlide(2)" alt="Living Room 2">
+                    </div>
+                    <div class="column">
+                        <img class="thumbnail" src="images/03.jpg" onclick="currentSlide(3)" alt="Living Room 3">
+                    </div>
+                    <div class="column">
+                        <img class="thumbnail" src="images/04.jpg" onclick="currentSlide(4)" alt="Living Room 4">
+                    </div>
+                    <div class="column">
+                        <img class="thumbnail" src="images/05.jpg" onclick="currentSlide(5)" alt="Living Room 5">
+                    </div>
+                    <div class="column">
+                        <img class="thumbnail" src="images/06.jpg" onclick="currentSlide(6)" alt="Living Room 6">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+     <!-- Popup Form using <dialog> -->
+        <div class="login_popup" id="popup_form">
+            <div class="box">
+                <div class="form1">
+                    <div class="close" id="close_btn">&times;</div>
+                    <h1>Personalized Interior Design Quote in Minutes</h1>
+                    <p>STEP 1 OF 3</p>
+                    <h5>Your floorplan</h5>
+                    <div class="form1boxes">
+                        <div class="form1box1" data-value="1">1 BHK</div>
+                        <div class="form1box1" data-value="2">2 BHK</div>
+                        <div class="form1box1" data-value="3">3 BHK</div>
+                        <div class="form1box1" data-value="4">4 BHK</div>
+                    </div>
+                    <h5>Purpose</h5>
+                    <div class="form1boxes">
+                        <div class="form1box1" data-value="move-in">Move In</div>
+                        <div class="form1box1" data-value="rent-out">Rent Out</div>
+                        <div class="form1box1" data-value="renovate">Renovate</div>
+                    </div>
+                    <button class="btn1">PROCEED</button>
+                </div>
+            </div>
+        </div>
+    <!---------------------------work html ends here---------------------->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script type="text/javascript">
+        var popupLogin = document.getElementById('popup_form');
+ var close = document.getElementById('close_btn');
+ 
+ function showPopup() {
+     popupLogin.classList.add('anyname');
+ }
+ 
+ function hidePopup() {
+     popupLogin.classList.remove('anyname');
+ }
+ 
+ function setupPopup() {
+     // Initially show the popup
+     showPopup();
+     
+     // Set interval to hide the popup after 5 seconds and show again
+     setInterval(function() {
+         hidePopup(); // Hide the popup
+         setTimeout(function() {
+             showPopup(); // Show the popup again after 5 seconds
+         }, 5000); // Adjust timing if needed
+     }, 10000); 
+ }
+ 
+ // Initialize popup setup on page load
+ window.addEventListener("load", function() {
+     setupPopup();
+ });
+ 
+ // Close button event listener
+ close.addEventListener("click", function() {
+     hidePopup();
+ });
+     
+     
+     </script>
+</body>
+</html>

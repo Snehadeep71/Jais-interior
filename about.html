@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAIS-About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__data">
+                <a href="index.html" class="nav__logo">
+                    <h1>JAIS INTERIO</h1>
+                </a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line nav__burger"></i>
+                    <i class="ri-close-line nav__close"></i>
+                </div>
+            </div>
+
+            <!--=============== NAV MENU ===============-->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="about.html" class="nav__link">About Us</a></li>
+
+                    <li><a href="work.html" class="nav__link">Works</a></li>
+                    <li><a href="ourculture.html" class="nav__link">Our Services</a></li>
+
+                    <li><a href="contact.html" class="nav__link" style="padding: 20px;">Contact Us</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!---------about us section 1 html starts here-------------------->
+    <section class="asec-01">
+        <!-- <div class="abouthead">
+            <h1>Jais Interior: Transforming Spaces with Elegance and Style in Kolkata</h1>
+        </div> -->
+        <div class="about-left">
+            <!-- Large background image -->
+
+            <img src="images/large-pic.jpg" alt="image_not_available" class="background-image">
+
+            <!-- Overlayed Swiper slider -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <img src="images/contact-usbg.webp" alt="image_not_available">
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <img src="images/04.jpg" alt="image_not_available">
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <img src="images/05.jpg" alt="image_not_available">
+                    </div>
+                </div>
+                <!-- Pagination for the swiper -->
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+        <div class="aboutright">
+            <h5>JAIS INTERIOR</h5>
+            <h2>Best Interior Designer in Barasat, Kolkata</h2>
+            <p>At Jais Interio, we're more than just interior designers; we're creators of beautiful, functional spaces
+                that reflect your style and personality. Our passion for interior design goes beyond aesthetics – we
+                understand that your home or workspace is an extension of your identity, and we're here to make your
+                dream space into reality.</p>
+            <p>Our interior design service is the heart of Jais Interio. With an expert team of designers, we craft
+                interiors that seamlessly blend form and function. Whether you're refreshing your living room, upgrading
+                your office, or giving your home a complete makeover, we've got you covered.</p>
+            <p>Jais Interio is a go-to destination for all your design needs. From plywood & hardware, to laminates &
+                veneers, aluminum sliding installation, stainless steel railing, wallpapers, UPVC window installation,
+                ACP and glazing services, PVC & WPC doors solution, and more. We offer a comprehensive range of interior
+                designing services to transform your space into a masterpiece.</p>
+        </div>
+    </section>
+    <!---------about us section 1 html ends here-------------------->
+     <!-- Popup Form using <dialog> -->
+        <div class="login_popup" id="popup_form">
+            <div class="box">
+                <div class="form1">
+                    <div class="close" id="close_btn">&times;</div>
+                    <h1>Personalized Interior Design Quote in Minutes</h1>
+                    <p>STEP 1 OF 3</p>
+                    <h5>Your floorplan</h5>
+                    <div class="form1boxes">
+                        <div class="form1box1" data-value="1">1 BHK</div>
+                        <div class="form1box1" data-value="2">2 BHK</div>
+                        <div class="form1box1" data-value="3">3 BHK</div>
+                        <div class="form1box1" data-value="4">4 BHK</div>
+                    </div>
+                    <h5>Purpose</h5>
+                    <div class="form1boxes">
+                        <div class="form1box1" data-value="move-in">Move In</div>
+                        <div class="form1box1" data-value="rent-out">Rent Out</div>
+                        <div class="form1box1" data-value="renovate">Renovate</div>
+                    </div>
+                    <button class="btn1">PROCEED</button>
+                </div>
+            </div>
+        </div>
+    <!---------about us section 2 html starts here-------------------->
+    <section class="asec-02">
+        <div class="sec-02content">
+            <h2>Interior Design</h2>
+            <p>Transform your space with our expert interior design services</p>
+        </div>
+    </section>
+    <!---------about us section 2 html ends here-------------------->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="script.js"></script>
+    <script type="text/javascript">
+        var popupLogin = document.getElementById('popup_form');
+ var close = document.getElementById('close_btn');
+ 
+ function showPopup() {
+     popupLogin.classList.add('anyname');
+ }
+ 
+ function hidePopup() {
+     popupLogin.classList.remove('anyname');
+ }
+ 
+ function setupPopup() {
+     // Initially show the popup
+     showPopup();
+     
+     // Set interval to hide the popup after 5 seconds and show again
+     setInterval(function() {
+         hidePopup(); // Hide the popup
+         setTimeout(function() {
+             showPopup(); // Show the popup again after 5 seconds
+         }, 5000); // Adjust timing if needed
+     }, 10000); 
+ }
+ 
+ // Initialize popup setup on page load
+ window.addEventListener("load", function() {
+     setupPopup();
+ });
+ 
+ // Close button event listener
+ close.addEventListener("click", function() {
+     hidePopup();
+ });
+     
+     
+     </script>
+</body>
+
+</html>

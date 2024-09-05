@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jais-Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="contactus.css">
+
+    
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__data">
+                <a href="index.html" class="nav__logo">
+                    <h1>JAIS INTERIO</h1>
+                </a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line nav__burger"></i>
+                    <i class="ri-close-line nav__close"></i>
+                </div>
+            </div>
+
+            <!--=============== NAV MENU ===============-->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="about.html" class="nav__link">About Us</a></li>
+
+                    <li><a href="work.html" class="nav__link">Works</a></li>
+                    <li><a href="ourservices.html" class="nav__link ">Our Services</a></li>
+
+                    <li><a href="contactus.html" class="nav__link" style="padding: 20px;">Contact Us</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+      <!--html for sec-05 starts here ------------->
+      <!--contact form-=--------------------->
+      <section class="csec-01">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3679.642809788171!2d88.48159847530547!3d22.741513979371724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjLCsDQ0JzI5LjUiTiA4OMKwMjknMDMuMCJF!5e0!3m2!1sen!2sin!4v1725532008290!5m2!1sen!2sin" ></iframe>
+      </section>
+      <!--contact form-=--------------------->
+       <!-- Popup Form using <dialog> -->
+        <div class="login_popup" id="popup_form">
+            <div class="box">
+                <div class="form1">
+                    <div class="close" id="close_btn">&times;</div>
+                    <h1>Personalized Interior Design Quote in Minutes</h1>
+                    <p>STEP 1 OF 3</p>
+                    <h5>Your floorplan</h5>
+                    <div class="form1boxes">
+                        <div class="form1box1" data-value="1">1 BHK</div>
+                        <div class="form1box1" data-value="2">2 BHK</div>
+                        <div class="form1box1" data-value="3">3 BHK</div>
+                        <div class="form1box1" data-value="4">4 BHK</div>
+                    </div>
+                    <h5>Purpose</h5>
+                    <div class="form1boxes">
+                        <div class="form1box1" data-value="move-in">Move In</div>
+                        <div class="form1box1" data-value="rent-out">Rent Out</div>
+                        <div class="form1box1" data-value="renovate">Renovate</div>
+                    </div>
+                    <button class="btn1">PROCEED</button>
+                </div>
+            </div>
+        </div>
+      <section class="csec-01">
+
+      </section>
+
+    <script src="script.js"></script>
+    <script type="text/javascript">
+        var popupLogin = document.getElementById('popup_form');
+ var close = document.getElementById('close_btn');
+ 
+ function showPopup() {
+     popupLogin.classList.add('anyname');
+ }
+ 
+ function hidePopup() {
+     popupLogin.classList.remove('anyname');
+ }
+ 
+ function setupPopup() {
+     // Initially show the popup
+     showPopup();
+     
+     // Set interval to hide the popup after 5 seconds and show again
+     setInterval(function() {
+         hidePopup(); // Hide the popup
+         setTimeout(function() {
+             showPopup(); // Show the popup again after 5 seconds
+         }, 5000); // Adjust timing if needed
+     }, 10000); 
+ }
+ 
+ // Initialize popup setup on page load
+ window.addEventListener("load", function() {
+     setupPopup();
+ });
+ 
+ // Close button event listener
+ close.addEventListener("click", function() {
+     hidePopup();
+ });
+     
+     
+     </script>
+
+</body>
+</html>

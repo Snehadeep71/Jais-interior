@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAIS-Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    
+
+</head>
+<!-- new website started on 26/06/2024 -->
+
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__data">
+                <a href="index.html" class="nav__logo">
+                    <h1>JAIS INTERIO</h1>
+                </a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line nav__burger"></i>
+                    <i class="ri-close-line nav__close"></i>
+                </div>
+            </div>
+
+            <!--=============== NAV MENU ===============-->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="about.html" class="nav__link">About Us</a></li>
+
+                    <li><a href="work.html" class="nav__link">Works</a></li>
+                    <li><a href="ourservices.html" class="nav__link ">Our Services</a></li>
+
+                    <li><a href="contactus.html" class="nav__link" style="padding: 20px;">Contact Us</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-----------section 1 html starts here------------------------->
+    <section class="sec-01">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!--Slide 1 -->
+                <div class="swiper-slide">
+                    <img src="images/jais-home-bcg.jpg" alt="image_not_available">
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <img src="images/bcg4.jpeg" alt="image_not_available">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/bcg2.jpeg" alt="image_not_available">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/bcg3.jpeg" alt="image_not_available">
+                </div>
+
+
+            </div>
+            <!-- <div class="swiper-pagination"></div> -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <div class="form1">
+            <h1>Personalized Interior Design Quote in Minutes</h1>
+            <p>STEP 1 OF 3</p>
+            <h5>Your floorplan</h5>
+            <div class="form1boxes">
+                <div class="form1box1">1 BHK</div>
+                <div class="form1box1">2 BHK</div>
+                <div class="form1box1">3 BHK</div>
+                <div class="form1box1">4 BHK</div>
+            </div>
+            <h5>Purpose</h4>
+                <div class="form1boxes">
+                    <div class="form1box1">Move In</div>
+                    <div class="form1box1">Rent Out</div>
+                    <div class="form1box1">Renovate</div>
+                </div>
+                <button class="btn1">PROCEED</button>
+        </div>
+    </section>
+    <!-----------section 1 html ends here------------------------->
+       <!-- Popup Form using <dialog> -->
+        <div class="login_popup" id="popup_form">
+            <div class="box">
+                <div class="form1">
+                    <div class="close" id="close_btn">&times;</div>
+                    <h1>Personalized Interior Design Quote in Minutes</h1>
+                    <p>STEP 1 OF 3</p>
+                    <h5>Your floorplan</h5>
+                    <div class="form1boxes">
+                        <div class="form1box1" data-value="1">1 BHK</div>
+                        <div class="form1box1" data-value="2">2 BHK</div>
+                        <div class="form1box1" data-value="3">3 BHK</div>
+                        <div class="form1box1" data-value="4">4 BHK</div>
+                    </div>
+                    <h5>Purpose</h5>
+                    <div class="form1boxes">
+                        <div class="form1box1" data-value="move-in">Move In</div>
+                        <div class="form1box1" data-value="rent-out">Rent Out</div>
+                        <div class="form1box1" data-value="renovate">Renovate</div>
+                    </div>
+                    <button class="btn1">PROCEED</button>
+                </div>
+            </div>
+        </div>
+
+    <!-----------section 2 html starts here------------------------->
+    <section class="sec-02">
+        <h1>Why Choose Us?</h1>
+        <div class="slider1">
+            <div class="slide-track">
+                <div class="slide1">
+                    <i class="fa-solid fa-building"></i>
+                    <p>22 cities</p>
+                </div>
+                <div class="slide1">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <p>Delivery in 45 days or we pay rent</p>
+                </div>
+                <div class="slide1">
+                    <i class="fa-solid fa-person"></i>
+                    <p>600+ In house designers</p>
+                </div>
+                <div class="slide1">
+                    <i class="fa-solid fa-user-ninja"></i>
+                    <p>No hidden cost</p>
+                </div>
+                <div class="slide1">
+                    <i class="fa-solid fa-house"></i>
+                    <p>35k+ homes delivered</p>
+                </div>
+                <div class="slide1">
+                    <i class="fa-solid fa-house"></i>
+                    <p>44 Studios</p>
+                </div>
+                <div class="slide1">
+                    <i class="fa-solid fa-award"></i>
+                    <p>Flat 10 years Warranty</p>
+                </div>
+                <div class="slide1">
+                    <i class="fa-solid fa-calculator"></i>
+                    <p>Easy EMI's</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-----------section 2 html ends here------------------------->
+    <!-----------section 3 html starts here------------------------->
+    <section class="sec-03">
+        <h1>Get your estimate in 3 simple steps</h1>
+        <div class="section3boxes">
+            <div class="sec03box1">
+                <img src="images/bhk-image.png" alt="image_not_available">
+                <h2>Choose your BHK type and purpose</h2>
+                <p>The type of house and purpose (Move in, rent out, renovate),helps us understand your requirements
+                    better.</p>
+            </div>
+            <div class="sec03box1">
+                <img src="images/bhk-image.png" alt="image_not_available">
+                <h2>Pick the rooms/areas of the house to be designed</h2>
+                <p>We'll be able to understand the scope of work for your interiors from this.</p>
+            </div>
+            <div class="sec03box1">
+                <img src="images/bhk-image.png" alt="image_not_available">
+                <h2>Share contact and move-in details</h2>
+                <p>We can get in touch and better plan the design process for you</p>
+            </div>
+        </div>
+        <button class="btn2">GET FREE ESTIMATE</button>
+    </section>
+    <!-----------section 3 html ends here------------------------->
+    <hr>
+    <!-----------section 4 html starts here------------------------->
+    <section class="sec-04">
+        <h2>JAIS's End-to-end interior solutions </h2>
+        <div class="sec-04boxes">
+            <div class="sec-04box1">
+                <img src="images/modular-kitchen.jpg" alt="image_not_available">
+                <p>Modular Kitchen</p>
+            </div>
+            <div class="sec-04box1">
+                <img src="images/cup-board-icon.jpg" alt="image_not_available">
+                <p>Storage and wardrobe</p>
+            </div>
+            <div class="sec-04box1">
+                <img src="images/crockery.png" alt="image_not_available">
+                <p>Crockery Units</p>
+            </div>
+            <div class="sec-04box1">
+                <img src="images/space-saving.jpg" alt="image_not_available">
+                <p>Space Saving Furniture</p>
+            </div>
+            <div class="sec-04box1">
+                <img src="images/tv-unit.jpg" alt="image_not_available">
+                <p>TV Units</p>
+            </div>
+            <div class="sec-04box1">
+                <img src="images/study-table.jpg" alt="image_not_available">
+                <p>Study Tables</p>
+            </div>
+            <div class="sec-04box1">
+                <img src="images/false-ceiling.png" alt="image_not_available">
+                <p>False Ceiling</p>
+            </div>
+            <div class="sec-04box1">
+                <img src="images/lights2.avif" alt="image_not_available">
+                <p>Lights</p>
+            </div>
+            <div class="sec-04box1">
+                <img src="images/wallpaper-icon.png" alt="image_not_available">
+                <p>Wallpaper</p>
+            </div>
+            <div class="sec-04box1">
+                <img src="images/wall-paint.png" alt="image_not_available">
+                <p>Wall Paint</p>
+            </div>
+            <div class="sec-04box1">
+                <img src="images/bathroom-icon.jpg" alt="image_not_available">
+                <p>Bathroom</p>
+            </div>
+            <div class="sec-04box1">
+                <img src="images/puja-unit.jpg" alt="image_not_available">
+                <p>Pooja Unit</p>
+            </div>
+            <div class="sec-04box1">
+                <img src="images/fooyer-design.jpg" alt="image_not_available">
+                <p>Foyer Designs</p>
+            </div>
+            <div class="sec-04box1">
+                <img src="images/moveable-furniture.jpg" alt="image_not_available">
+                <p>Movable furniture</p>
+            </div>
+            <div class="sec-04box1">
+                <img src="images/kids-bedroom.jpg" alt="image_not_available">
+                <p>Kids Bedroom</p>
+            </div>
+        </div>
+        <button class="btn2">GET FREE ESTIMATE</button>
+    </section>
+    <!-----------section 4 html ends here------------------------->
+    <hr>
+    <!--------------section 10 html starts here------------------->
+    <section class="sec-10">
+        <h1>Let our numbers do the talking!</h1>
+        <div class="counter-container">
+            <div class="counter-box">
+                <div class="counter" data-target="75000">0</div>
+                <p>JaisHomes</p>
+            </div>
+            <div class="counter-box">
+                <div class="counter" data-target="3500">0</div>
+                <p>designers</p>
+            </div>
+            <div class="counter-box">
+                <div class="counter" data-target="40">0</div>
+                <p>cities</p>
+            </div>
+            <div class="counter-box">
+                <div class="counter" data-target="4">0</div>
+                <p>countries</p>
+            </div>
+        </div>
+    </section>
+    <!--------------section 10 html ends here------------------->
+    <!--------------section 5 html starts here------------------->
+    <section class="sec-05">
+        <h2>Design gallery</h2>
+        <p>Look no further than HomeLane for end-to-end interior design services</p>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide"><img src="images/g1.webp" alt="image_not_available"></div>
+                <div class="slide"><img src="images/g2.webp" alt="image_not_available"></div>
+                <div class="slide"><img src="images/g3.webp" alt="image_not_available"></div>
+                <div class="slide"><img src="images/g4.webp" alt="image_not_available"></div>
+                <div class="slide"><img src="images/g5.webp" alt="image_not_available"></div>
+                <div class="slide"><img src="images/g6.webp" alt="image_not_available"></div>
+                <div class="slide"><img src="images/g7.webp" alt="image_not_available"></div>
+                <div class="slide"><img src="images/g8.webp" alt="image_not_available"></div>
+            </div>
+            <button class="prev" onclick="moveSlide(-1)"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="next" onclick="moveSlide(1)"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <button class="btn2">GET FREE ESTIMATE</button>
+    </section>
+    <hr>
+    <!--------------section 5 html ends here------------------->
+    <!--------------section 6 html starts here------------------->
+    <section class="sec-06">
+        <h2>Happy Homes by HomeLane</h2>
+        <div class="box-container">
+            <div class="box1">
+                <img src="images/testi1.webp" alt="image_not_available">
+                <div class="box1content">
+                    <h2>Lorem, ipsum.</h2>
+                    <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, nisi?</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsam autem quam assumenda,
+                        culpa vel!</p>
+                </div>
+            </div>
+            <div class="box1">
+                <img src="images/testi2.webp" alt="image_not_available">
+                <div class="box1content">
+                    <h2>Lorem, ipsum.</h2>
+                    <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, nisi?</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsam autem quam assumenda,
+                        culpa vel!</p>
+                </div>
+            </div>
+            <div class="box1">
+                <img src="images/testi3.webp" alt="image_not_available">
+                <div class="box1content">
+                    <h2>Lorem, ipsum.</h2>
+                    <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, nisi?</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsam autem quam assumenda,
+                        culpa vel!</p>
+                </div>
+            </div>
+            <div class="box1">
+                <img src="images/testi1.webp" alt="image_not_available">
+                <div class="box1content">
+                    <h2>Lorem, ipsum.</h2>
+                    <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, nisi?</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsam autem quam assumenda,
+                        culpa vel!</p>
+                </div>
+            </div>
+            <div class="box1">
+                <img src="images/testi2.webp" alt="image_not_available">
+                <div class="box1content">
+                    <h2>Lorem, ipsum.</h2>
+                    <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, nisi?</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsam autem quam assumenda,
+                        culpa vel!</p>
+                </div>
+            </div>
+            <div class="box1">
+                <img src="images/testi3.webp" alt="image_not_available">
+                <div class="box1content">
+                    <h2>Lorem, ipsum.</h2>
+                    <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, nisi?</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsam autem quam assumenda,
+                        culpa vel!</p>
+                </div>
+            </div>
+            <button class="prev" onclick="slideSlider(-1)"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="next" onclick="slideSlider(1)"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <button class="btn2">GET FREE ESTIMATE</button>
+    </section>
+    <hr>
+    <!--------------section 6 html ends here------------------->
+    <!--------------section 7 html starts here------------------->
+    <section class="sec-07">
+        <h2>Get an estimate for your Home</h2>
+        <p>Calculate the cost of doing up your home interiors now.</p>
+        <div class="sec-07container">
+            <div class="sec-07box">
+                <div class="sec-07boxleft">
+                    <img src="images/full-interior-image.webp" alt="image_not_available">
+                    <h3>Full Home Interiors</h3>
+                    <p>Get the estimate price for your full home interiors.</p>
+                    <button class="btn2">GET FREE ESTIMATE</button>
+                </div>
+                <div class="sec-07boxright">
+                    <img src="images/calculator.webp" alt="image_not_available">
+                </div>
+            </div>
+            <div class="sec-07box">
+                <div class="sec-07boxleft">
+                    <img src="images/kitchen.png" alt="image_not_available">
+                    <h3>Kitchen</h3>
+                    <p>Get costing for your kitchen interiors.</p>
+                    <button class="btn2">GET FREE ESTIMATE</button>
+                </div>
+                <div class="sec-07boxright">
+                    <img src="images/calculator.webp" alt="image_not_available">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------------section 7 html ends here------------------->
+    <!--------------section 8 html starts here------------------->
+    <section class="sec-08">
+        <div class="sec08header">
+            <h2>What We Offer</h2>
+            <button class="btn2">GET FREE QUOTE</button>
+        </div>
+        <div class="sec-08boxes">
+            <div class="sec-08box">
+                <div class="sec08heading">
+                    <img src="images/" alt="image_not_available">
+                    <h3>Our Services</h3>
+                </div>
+                <div class="sec08content">
+                    <ul>
+                        <li><img src="images/bullet-icon.webp" alt="image_not_available">Modular Kitchen</li>
+                        <li><img src="images/bullet-icon.webp" alt="image_not_available">Modular Wardrobes</li>
+                        <li><img src="images/bullet-icon.webp" alt="image_not_available">Lighting</li>
+                        <li><img src="images/bullet-icon.webp" alt="image_not_available">Flooring</li>
+                        <li><img src="images/bullet-icon.webp" alt="image_not_available">Electrical Work</li>
+                        <li><img src="images/bullet-icon.webp" alt="image_not_available">Civil Work</li>
+                        <li><img src="images/bullet-icon.webp" alt="image_not_available">False Ceiling</li>
+                        <li><img src="images/bullet-icon.webp" alt="image_not_available">Wall Design & Painting</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="sec-08box">
+                <div class="sec08heading">
+                    <img src="images/" alt="image_not_available">
+                    <h3>Warranty</h3>
+                </div>
+                <div class="sec08content">
+                    <ul>
+                        <li><img src="images/bullet-icon.webp" alt="image_not_available">Flat 10 years Warranty, stay worry free with our 10 years warranty policy with our modular products</li>
+                        <li><img src="images/bullet-icon.webp" alt="image_not_available">upto 1 year on site service warranty, warranty on on site services such as painting, electrical, plumbing</li>
+                        
+                    </ul>
+                </div>
+
+            </div>
+            <div class="sec-08box">
+                <div class="sec08heading">
+                    <img src="images/" alt="image_not_available">
+                    <h3>Technology & Science</h3>
+                </div>
+                <div class="sec08content">
+                    <ul>
+                        <li><img src="images/bullet-icon.webp" alt="image_not_available">AquaBlocR Technology - Hermetically sealed edges that ensure no moisture enters the panels of your modular cabinets.</li>
+                        <li><img src="images/bullet-icon.webp" alt="image_not_available">AntiBubble® Technology - Super seamless panels without air bubbles for your modular cabinets.</li>
+                        <li><img src="images/bullet-icon.webp" alt="image_not_available">DuraBuildTM Technology - Robust structure for modular cabinets, making them strong and long-lasting.
+                        </li>
+                       
+                    </ul>
+                </div>
+
+            </div>
+            <div class="sec-08box">
+                <div class="sec08heading">
+                    <img src="images/" alt="image_not_available">
+                    <h3>Price Benefits</h3>
+                </div>
+                <div class="sec08content">
+                    <ul>
+                        <li><img src="images/bullet-icon.webp" alt="image_not_available">Price-match guarantee3 - Price match to a valid quote in comparison with a branded player and for exact scope.</li>
+                        <li><img src="images/bullet-icon.webp" alt="image_not_available">Flexible payment options - EMI solutions and payment schemes from leading financial partners.</li>
+                        <li><img src="images/bullet-icon.webp" alt="image_not_available">No hidden costs - Transparent costing without last-minute additions.</li>
+                        
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--------------section 8 html ends here------------------->
+    <!--------------section 9  html starts here------------------->
+    <div class="marquee-container">
+        <h2>Our trusted partners</h2>
+        <p>Winning collaborations that produce winning designs.</p>
+        <div class="marquee">
+            <img src="images/bosch-logo.png" alt="Logo 1">
+            <img src="images/asian-paint-logo.png" alt="Logo 2">
+            <img src="images/siemens-logo.png" alt="Logo 3">
+            <img src="images/heittich-logo2.png" alt="Logo 4">
+            <img src="images/fabindia-logo2.jpg" alt="Logo 5">
+            <img src="images/philips-logo.webp" alt="Logo 6">
+            <img src="images/centuryply-logo.jpg" alt="Logo 6">
+            <img src="images/jaquar-logo.png" alt="Logo 6">
+            <img src="images/saint-gobain-logo2.png" alt="Logo 6">    
+        </div>
+    </div>
+    
+    <!--------------section 9 html ends here------------------->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script type="text/javascript">
+       var popupLogin = document.getElementById('popup_form');
+var close = document.getElementById('close_btn');
+
+function showPopup() {
+    popupLogin.classList.add('anyname');
+}
+
+function hidePopup() {
+    popupLogin.classList.remove('anyname');
+}
+
+function setupPopup() {
+    // Initially show the popup
+    showPopup();
+    
+    // Set interval to hide the popup after 5 seconds and show again
+    setInterval(function() {
+        hidePopup(); // Hide the popup
+        setTimeout(function() {
+            showPopup(); // Show the popup again after 5 seconds
+        }, 5000); // Adjust timing if needed
+    }, 10000); 
+}
+
+// Initialize popup setup on page load
+window.addEventListener("load", function() {
+    setupPopup();
+});
+
+// Close button event listener
+close.addEventListener("click", function() {
+    hidePopup();
+});
+    
+    
+    </script>
+</body>
+
+</html>

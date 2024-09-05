@@ -1,0 +1,188 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*--------------about sec-01 css starts here----------*/
+.asec-01{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 80%;
+    min-height: 100vh;
+    margin: 10vh auto;
+    padding-top: 10vh;
+
+}
+.abouthead h1{
+    text-align: center;
+    align-items: center;
+   display: block;
+    z-index: 100;
+    top: 20px;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.aboutleft,
+.aboutright{
+    /* border: 2px solid red; */
+    flex: 1 0 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.about-left{
+    position: relative;
+    
+}
+.aboutleft img:nth-child(1){
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    max-width: 60%;
+}
+.aboutleft img:nth-child(2){
+    position: absolute;
+    right: 0;
+}
+.aboutright p{
+    font-size: 1rem;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: left;
+    line-height: 1.6;
+    color: #717171;
+}
+.aboutright h5{
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 20px 0px;
+    box-sizing: border-box;
+}
+.aboutright h2{
+    font-size: 2.7rem;
+    font-weight: bold;
+    padding: 20px 0px;
+    box-sizing: border-box;
+}
+/* Swiper container should take up the full size of the image section */
+.swiper-container {
+    position: absolute;
+    width: 100%;
+    max-width: 60%;
+    height: 100%;
+    max-height: 60%;
+    z-index: 1;
+    top: 100px;
+    box-sizing: border-box;
+}
+
+/* Each slide should fit within the box */
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensure slides take full height of the box */
+}
+/* Hover effect for the image */
+.swiper-slide img:hover {
+    transform: scale(1.1); /* Scale up the image on hover */
+    transition: transform 0.5s ease-in-out; /* Smooth scaling effect */
+    cursor: pointer; /* Change cursor to pointer */
+}
+.swiper-slide img{
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Navigation buttons styling */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #000; /* Customize navigation buttons color */
+    z-index: 11; /* Ensure buttons stay on top */
+}
+/*-----------------new code-------------*/
+.asec-01 {
+    position: relative;
+    padding: 50px; /* Adjust padding to position the section */
+}
+
+/* Large background image styling */
+.background-image {
+    width: 100%; /* Full width for large image */
+    height: auto;
+    border-radius: 10px; /* Optional rounded corners */
+}
+
+/* Swiper container styling */
+.swiper-container {
+    position: absolute; /* Position absolute to overlap on the background image */
+    top: 50%; /* Adjust based on where you want the slider to be */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the swiper on the larger image */
+    width: 300px; /* Set the size of the swiper container */
+    height: 400px; /* Adjust as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for the slider */
+    border-radius: 10px; /* Optional rounded corners */
+    overflow: hidden; /* Hide overflow for smooth image transitions */
+}
+
+/* Ensure each slide image fits the container */
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Optional: Hover effect for images in the slider */
+.swiper-slide img:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+/* Swiper pagination bullets styling */
+.swiper-pagination {
+    bottom: 10px; /* Adjust as needed */
+}
+
+.swiper-pagination-bullet {
+    background: #000; /* Customize pagination bullets color */
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #000; /* Customize navigation buttons color */
+}
+/*-----------------new code-------------*/
+/*--------------about sec-01 css ends here----------*/
+/*--------------about sec-02 css starts here----------*/
+.asec-02{
+    width: 100%;
+    min-height: 70vh;
+    background: url(images/bg-1.jpg) center center/cover;
+    position: relative;
+}
+.sec-02content{
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    background-color: #fff;
+    bottom: 20px;
+    left: 120px;
+    padding: 40px;
+    box-sizing: border-box;
+    text-align: left;
+    align-items: center;
+    margin: 0 auto;
+    line-height: 1.6;
+
+}
+.sec-02content p{
+    color:rgb(10, 10, 99);
+    font-weight: bold;
+}
+/*--------------about sec-02 css ends here----------*/
